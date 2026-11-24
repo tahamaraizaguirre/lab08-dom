@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de notas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 640px;
+            margin: 30px auto;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            color: #25476a;
+        }
+
+        section {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .aprobado {
+            color: green;
+        }
+
+        .desaprobado {
+            color: red;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registro de notas de estudiantes</h1>
+
+    <section>
+        <h2>Agregar estudiante</h2>
+
+        <form id="formulario">
+            <input id="nombre" type="text" placeholder="Nombre del estudiante">
+            <input id="nota" type="number" placeholder="Nota de 0 a 20">
+            <button type="submit">Agregar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </section>
+
+    <section>
+        <h2>Estudiantes registrados</h2>
+        <ul id="listaEstudiantes"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
